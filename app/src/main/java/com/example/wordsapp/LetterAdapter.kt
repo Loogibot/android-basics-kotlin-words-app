@@ -29,6 +29,7 @@ import androidx.recyclerview.widget.RecyclerView
 /**
  * Adapter for the [RecyclerView] in [MainActivity].
  */
+
 class LetterAdapter :
     RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
 
@@ -70,6 +71,7 @@ class LetterAdapter :
         holder.button.setOnClickListener {
             // Create an action from WordList to DetailList
             // using the required arguments
+
             val context = holder.view.context
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra("letter", holder.button.text.toString())
